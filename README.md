@@ -1,33 +1,31 @@
-# 📊 Databricks - OCCUPATIONS SQL 🎓
+# 🗂️ Projeto Occupation no Databricks
 
-Bem-vindo(a) ao repositório!  
-Aqui você encontra **scripts SQL** para manipular a tabela `OCCUPATIONS` no **Databricks Free Edition**, resolvendo um desafio clássico de consultas em SQL.  
+Este repositório contém um mini-projeto em **PySpark + SQL** rodando no **Databricks**, que demonstra:
 
----
-
-## 🗂️ Estrutura do repositório
-
-- `01_create_tables.sql` ➡️ Cria tabelas auxiliares:
-  - `Occupation_Map` (mapeia letras para profissões)
-  - `Names_Raw` (filtra só os nomes do arquivo original)
-- `02_clean_data.sql` ➡️ Limpa os dados:
-  - Extrai **nome sem parênteses**
-  - Pega a **inicial da profissão**
-  - Cria a tabela final `OCCUPATIONS` juntando tudo com `JOIN`
-- `03_results.sql` ➡️ Faz as consultas finais:
-  - Lista todos os nomes em ordem alfabética com a inicial da profissão  
-  - Conta quantas pessoas há em cada profissão, no formato pedido
+1. ✅ Criação de uma tabela `occupation` com dados de exemplo.  
+2. ✅ Consulta de nomes formatados no padrão `Nome (Inicial da Ocupação)`.  
+3. ✅ Contagem de quantas pessoas existem em cada profissão, exibindo em formato descritivo.  
 
 ---
 
-## 📝 Exemplo de entrada (arquivo `output000.txt`)
+## 📂 Estrutura do Repositório
 
-```text
-Aamina(D)
-Ashley(P)
-Belvet(P)
-...
-There are a total of 3 doctors.
-There are a total of 4 actors.
-There are a total of 4 singers.
-There are a total of 7 professors.
+- **notebooks/** → códigos em PySpark (versões exportadas do Databricks).  
+- **sql/** → consultas SQL organizadas em arquivos separados.  
+- **data/** → dados de exemplo (se necessário importar).  
+- **docs/** → diagramas ou documentação complementar.  
+
+---
+
+## 🚀 Tecnologias
+
+- [Databricks](https://www.databricks.com/)  
+- [Apache Spark (PySpark)](https://spark.apache.org/)  
+- SQL  
+
+---
+
+## 📊 Exemplos de Saídas
+
+### 🔹 Consulta 1: Lista de Nomes
+
